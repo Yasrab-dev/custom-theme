@@ -1,0 +1,910 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body{
+
+} */
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('../fonts/SweetSansPro-Light.woff2') format('woff2'),
+        url('../fonts/SweetSansPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/ChronicleDisplay-Roman.woff2') format('woff2'),
+        url('../fonts/ChronicleDisplay-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/ChronicleDisplay-Black.woff2') format('woff2'),
+        url('../fonts/ChronicleDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display Semi';
+    src: url('../fonts/ChronicleDisplay-Semi.woff2') format('woff2'),
+        url('../fonts/ChronicleDisplay-Semi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('ChronicleDisplay-LightItalic.woff2') format('woff2'),
+        url('ChronicleDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+} */
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('../fonts/SweetSansPro-Medium.woff2') format('woff2'),
+        url('../fonts/SweetSansPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('../fonts/SweetSansPro-Bold.woff2') format('woff2'),
+        url('../fonts/SweetSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/ChronicleDisplay-Light.woff2') format('woff2'),
+        url('../fonts/ChronicleDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/ChronicleDisplay-LightItalic.woff2') format('woff2'),
+        url('../fonts/ChronicleDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    color: unset !important;
+}
+
+h2 {
+    font-size: 53px;
+    line-height: 1.2;
+    color: #323232;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #424242;
+    font-family: 'Sweet Sans Pro';
+}
+
+
+/* HOME CSS START */
+/* HOME BANNER STARTS */
+#home-banner {
+    background-image: url(../images/home-banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-banner .banner-innerwrap {
+    max-width: 68%;
+}
+
+#home-banner::after {
+    content: url('../images/banner-half-h.png');
+    position: absolute;
+    bottom: -54%;
+    right: -17px;
+    opacity: 0.5;
+}
+
+#home-banner h1 {
+    text-transform: none;
+}
+
+/* HOME BANNER ENDS */
+/*HOME GROUP SEC STATS */
+.group-sec-outerwrap {
+    background-image: url(../images/gruop-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 227px 0px 200px;
+}
+
+.group-content h2 {
+    font-size: 71px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 88px;
+    font-family: 'Chronicle Display';
+}
+
+.group-content p {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 140px;
+    font-family: 'Chronicle Display';
+}
+
+.group-content a {
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 18px 47px;
+    color: #323232;
+    background-color: #fff;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 300;
+}
+
+
+/*HOME GROUP SEC ENDS */
+
+/*HOME SERVICES SEC STARTS */
+.services-sec-outerwrap {
+    background-color: #021123;
+    padding: 106px 0px;
+}
+
+.services-content-inner {
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+.service-content {
+    /* position: absolute; */
+    margin-bottom: -15px;
+    /* right: 25%; */
+}
+
+.service-content h3 {
+    font-size: 42px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'Chronicle Display';
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.service-content a {
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 22px 58px;
+    color: #fff !important;
+    background-color: #c79719;
+    font-family: 'Sweet Sans Pro';
+}
+
+#development {
+    background-image: url(../images/dev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 431px;
+}
+
+#acquisitions {
+    background-image: url(../images/acq.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 431px;
+}
+
+#managment {
+    background-image: url(../images/man.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 431px;
+}
+
+/*HOME SERVICES SEC ENDS */
+/* HOME CSS END */
+
+/* HEADER CSS START */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    /* padding: 45px 95px 45px 185px;  */
+    padding: 45px 0px 45px 185px;
+    overflow: hidden;
+}
+
+header .navbar-collapse {
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding-bottom: 35px;
+    position: relative;
+    margin-right: -12px;
+}
+
+/* header .navbar-collapse::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+} */
+header .navbar-collapse ul li a {
+    padding: 0px !important;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 165px;
+    position: relative;
+    font-family: 'Sweet Sans Pro';
+}
+
+header .navbar-collapse ul li a::before,
+header .navbar-collapse ul li a.active::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 5px;
+    background-color: #c79719;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: 0;
+}
+
+header .navbar-collapse ul li a:hover {
+    color: #fff !important;
+}
+
+header .navbar-collapse ul li a:hover:before,
+header .navbar-collapse ul li a.active::after {
+    opacity: 1;
+    visibility: 1;
+}
+
+header .navbar-collapse ul li:last-child a {
+    margin-right: 95px;
+}
+
+/* HEADER CSS END */
+
+/* BANNER CSS START */
+.banner-outerwrap {
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 182px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-innerwrap h1 {
+    font-size: 75px;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 49px;
+    font-weight: 400;
+    font-family: 'Chronicle Display';
+}
+
+.banner-btn {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #c79618;
+    padding: 20px 39px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+}
+
+.banner-innerwrap {
+    max-width: 60%;
+    position: relative;
+}
+
+/*  SERVICES MANAGEMENT CSS START */
+.services-outerwrap {
+    overflow: hidden;
+    padding: 0px 0 107px;
+    background-image: url(../images/services-bg-H-left-top.png), url(../images/services-bg-H-right-bottom.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 693px, 889px;
+    background-position: 0px 48px, right 695px;
+    position: relative;
+    z-index: 99;
+}
+
+.services-content.acquisitions h2 {
+    display: inline-block;
+}
+
+.services-outerwrap .row:last-child .services-content {
+    padding-left: 90px;
+    padding-top: 117px;
+    max-width: 71%;
+}
+
+.services-outerwrap h2 {
+    margin-bottom: 137px;
+    padding: 0 15%;
+}
+
+.services-content h2 {
+    font-size: 62px;
+    margin-bottom: 37px;
+    line-height: 1.2;
+    padding: unset;
+    position: relative;
+    /* display: inline-block; */
+    font-family: 'Chronicle Display';
+}
+
+.services-content h2::after,
+.services-content.acquisitions h2::after {
+    content: "";
+    border: 1px solid #c6c5c4;
+    position: absolute;
+    /* width: 223px; */
+    top: 50%;
+    transform: translateY(-50%);
+    /* right: -78%; */
+    width: 100%;
+    right: 0px;
+    z-index: -1;
+}
+
+#services-banner {
+    background-image: url(../images/services-banner-bg.png);
+}
+
+.services-content.management-sec>ul {
+    display: table;
+}
+
+.services-content.acquisitions h2::after {
+    content: "";
+    width: 223px;
+    right: -78%;
+}
+
+.services-content.management-sec {
+    padding: unset;
+    max-width: unset;
+}
+
+.services-content.management-sec h2 span,
+.services-content h2 span {
+    background-color: #fff;
+    padding-right: 51px;
+}
+
+.services-content.management-sec h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: -1;
+}
+
+.services-content ul li {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Sweet Sans Pro';
+    color: #424242;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.services-content ul {
+    padding-left: 12px;
+}
+
+.services-content ul li::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 6px;
+    background-color: #424242;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+    opacity: 1;
+}
+
+.services-img {
+    height: 555px;
+}
+
+.blur-image {
+    margin: 0 -15px;
+}
+
+.services-img img {
+    object-fit: cover;
+    width: 90%;
+    height: 100%;
+}
+
+.services-content {
+    padding-left: 295px;
+    max-width: 87%;
+}
+
+.services-content.development {
+    padding-left: 150px;
+}
+
+.managment-list h2 {
+    font-size: 62px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    position: relative;
+    font-family: 'Chronicle Display';
+}
+
+.managment-list h2::after {
+    content: "";
+    border: 1px solid #bfbdbc;
+    position: absolute;
+    width: 50%;
+    top: 64%;
+    right: 100px;
+}
+
+.managment-list ul li {
+    font-size: 18px;
+    list-style-type: disc;
+    font-family: 'Sweet Sans Pro';
+}
+
+/*  SERVICES MANAGEMENT CSS END */
+
+/* CARRER BANNER CSS STARTS */
+#career-banner {
+    background-image: url(../images/career-banner-bg.png);
+}
+
+/* CARRER BANNER CSS ENDS */
+/* CAREER CONTENT SEC STARTS */
+.career-content-outerwrap {
+    padding: 150px 0px 169px;
+}
+
+.career-content-innerwrap {
+    width: 100%;
+    max-width: 91%;
+}
+
+.career-content-innerwrap h2 {
+    font-size: 53px;
+    line-height: 1.2;
+    font-family: 'Chronicle Display';
+    margin-bottom: 57px;
+}
+
+.career-content-innerwrap h4 {
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #c79719;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+    margin-bottom: 46px;
+}
+
+.career-content-innerwrap p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #474747;
+    font-family: 'Sweet Sans Pro';
+    margin-bottom: 69px;
+    opacity: 0.7;
+}
+
+.career-content-btn-sec p {
+    opacity: 1;
+}
+
+.career-content-btn-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.career-content-btn-sec p {
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-right: 72px;
+}
+
+.career-content-btn-sec a {
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+    background-color: #c79719;
+    padding: 21px 75px;
+}
+
+/* CAREER CONTENT SEC ENDS */
+
+/* CONTACT HEADER STARTS */
+#contact-header {
+    position: relative;
+    padding: 24px 0px 24px 185px;
+}
+
+#contact-header .navbar-collapse ul li a {
+    color: #000 !important;
+}
+
+#contact-header .navbar-collapse {
+    border-bottom: 1px solid rgba(208, 206, 205, 1);
+}
+
+/* CONTACT HEADER ENDS */
+
+
+
+/* CONTACT SEC STARTS */
+.contact-sec-outterwrap {
+    padding: 100px 0px;
+}
+
+.contact-sec-innerwrap h1 {
+    font-size: 74px;
+    line-height: 1.2;
+    font-family: 'Chronicle Display';
+    margin-bottom: 36px;
+}
+
+.contact-sec-innerwrap h2 {
+    font-size: 59px;
+    line-height: 1.2;
+    font-family: 'Chronicle Display';
+    margin-bottom: 79px;
+}
+
+.contact-sec-innerwrap p {
+    width: 100%;
+    max-width: 1192px;
+    font-size: 26px;
+    line-height: 2;
+    font-family: 'Sweet Sans Pro';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b88a12;
+    margin-bottom: 94px;
+}
+
+.contact-sec-innerwrap form textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.contact-sec-innerwrap form input,
+.contact-sec-innerwrap form textarea {
+    width: 100%;
+    border: unset;
+    margin-bottom: 42px;
+    padding: 18px 32px;
+}
+
+.contact-sec-innerwrap form input::placeholder,
+.contact-sec-innerwrap form textarea::placeholder {
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-family: 'Sweet Sans Pro';
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 118px;
+}
+
+.form-btn input {
+    width: 100%;
+    max-width: 195px;
+    background-color: #c79719;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+}
+
+.contact-us-sec {
+    width: 100%;
+    max-width: 1087px;
+    margin: 0 auto;
+}
+
+.contact-us-sec h5 {
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact-us-sec span {
+    color: #c79719;
+}
+
+.contact-us-sec a {
+    display: block;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000 !important;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact-us-sec i {
+    font-size: 25px;
+    color: #c79719;
+    margin-right: 20px;
+}
+
+/* CONTACT SEC ENDS */
+
+/* PORTFOLIO BANNER START */
+#portfolio-banner {
+    background-image: url(../images/portfolio-banner-bg.png);
+    position: relative;
+    background-position: left;
+}
+
+#portfolio-banner .banner-btn {}
+
+/* #portfolio-banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+} */
+
+/* PORTFOLIO BANNER END */
+/* BANNER CSS END */
+
+/*  HOSPILITY MANAGEMENT CSS START */
+.hospility-outerwrap {
+    overflow: hidden;
+    padding: 130px 0 107px;
+}
+
+.hospility-outerwrap .row:last-child .hospility-content {
+    padding-left: 90px;
+    padding-top: 117px;
+    max-width: 85%;
+}
+
+.hospility-outerwrap h2 {
+    margin-bottom: 137px;
+    padding: 0 15%;
+    font-family: 'Chronicle Display';
+}
+
+.hospility-content h2 {
+    margin-bottom: 43px;
+    line-height: 0.8;
+    padding: unset;
+}
+
+.hospility-img {
+    height: 555px;
+}
+
+.hospility-img img {
+    object-fit: cover;
+    width: 90%;
+    height: 100%;
+}
+
+.hospility-content {
+    padding-left: 270px;
+    max-width: 91%;
+}
+
+/*  HOSPILITY MANAGEMENT CSS END */
+
+/* PORTFOLIO LOCATIONS CSS START */
+.portfolio-location-img {
+    margin-bottom: 37px;
+}
+
+.portfolio-location-outerwrap {
+    padding: 151px 0 107px;
+}
+
+.portfolio-location-innerwrap {
+    margin-bottom: 79px;
+}
+
+.portfolio-location-content h3 {
+    font-size: 29px;
+    line-height: 1.2;
+    color: #323232;
+    text-transform: capitalize;
+    margin-bottom: 39px;
+    font-family: 'Chronicle Display';
+}
+
+.portfolio-location-content a {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #3a3a3a;
+    text-transform: uppercase;
+    font-family: 'Sweet Sans Pro';
+    font-weight: 500;
+}
+
+.portfolio-location-content a i {
+    color: #cda233;
+    font-size: 23px;
+    margin-right: 14px;
+}
+
+/* PORTFOLIO LOCATIONS CSS END */
+
+/* FOOTER SEC START */
+footer {
+    background-color: #04172f;
+    padding: 78px 146px 75px 194px;
+}
+
+.footer-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-links ul li a {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-right: 132px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Sweet Sans Pro';
+}
+
+.footer-links ul li a:hover {
+    color: #fff !important;
+}
+
+.footer-links ul li:last-child a {
+    margin-right: 0px;
+}
+
+.footer-top {
+    margin-bottom: 98px;
+}
+
+.footer-copy-right p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #97a5b7;
+    font-family: 'Sweet Sans Pro';
+}
+
+.footer-linked-in {
+    text-align: right;
+}
+
+.footer-copy-right p span {
+    display: inline-block;
+    padding: 0 48px;
+}
+
+/* FOOTER SEC END */
+
+/* MEDIA QUEIRY STARTS */
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 640px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 425px) {}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 320px) {}
+
+/* MEDIA QUERY CSS END */
